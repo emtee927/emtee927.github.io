@@ -1,0 +1,53 @@
+<!--Alisa Nguyen-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+	ul {
+    	list-style-type: none;
+    	margin: 0;
+    	padding: 0;
+    	overflow: hidden;
+    	background-color: #261a0d;
+	}
+
+	li {
+    	float: left;
+	}
+
+	li a {
+    	display: block;
+    	color:white;
+    	text-align: center;
+    	padding: 14px 16px;
+    	text-decoration: none;
+	}
+
+	li a:hover:not(.active) {
+    	background-color: #4c341a;
+	}
+
+	.active {
+    	background-color: ;
+       ;
+	}
+    .intro{
+    	font-family: impact;
+        text-align:center;
+    }
+		</style>
+	</head>
+	<body>
+
+		<ul>
+  			<li><a class="active" href="#home" >Home</a></li>
+  			<li><a href="#edu">Education</a></li>
+  			<li><a href="#contact">Contact</a></li>
+  			<li><a href="#about">About</a></li>
+		</ul>
+     	<div  class="home">
+			<h1 class="intro">Hello! Welcome to My Portfolio</h1>
+			<p class="aboutme">Hi, my name is Alisa Nguyen. In my free-time, I usually listen to music and draw. I’m super crazy about the performing and visual arts. I often listen to Pop music. It makes me fell better after busy day in school. My another hobby is drawing. Most of my paintings were depend on my feelings at that time. And Instagram account is the place that I perform my paintings. Moreover, I’m also interested in Mathematics. Math builds the logical thinking in me.  I got two awards in Math 9 and one of them is Math for calculation. With those strong-points, my target in the future is to become a Event Manager. To make my dream comes true, I have prepared some skills for myself including presentation skill (making power-point, public speaking), editing video (making film), making own product and so on. All of my products are in Project. </p>
+      </body>
+      </div>
+</html>
