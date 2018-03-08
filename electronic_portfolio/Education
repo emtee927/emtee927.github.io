@@ -1,1 +1,67 @@
+<!--Alisa Nguyen-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+    body {
+    	font-family:courier;
+     }
+
+	ul {
+    	list-style-type: none;
+    	margin: 0;
+    	padding: 0;
+    	overflow: hidden;
+    	background-color: #261a0d;
+	}
+
+	li {
+    	float: left;
+	}
+
+	li a {
+    	display: block;
+    	color:white;
+    	text-align: center;
+    	padding: 14px 16px;
+    	text-decoration: none;
+	}
+
+	li a:hover:not(.active) {
+    	background-color: #5c3e23;
+	}
+
+	.active {
+    	background-color:#dcbea3 ;
+       ;
+	}
+    .intro{
+    	font-family: impact;
+        text-align:center;
+    }
+		</style>
+	</head>
+	<body>
+
+		<ul>
+  			<li><a href="#home" >Home</a></li>
+  			<li><a class="active" href="#edu">Education</a></li>
+  			<li><a href="#volu">Volunteer</a></li>
+  			<li><a href="#skills">Skills</a></li>
+        <li><a href="#hob">Hobbies</a></li>
+		</ul>
+     	<div  class="edu">
+			<h1 class="intro">Education</h1>
+			<h2>1/Enver Creek Secondary School 2017-2019</h2>
+			<p>This is the school that i chose when i started my study-abroad plan. Studying in Enver Creek for two years helps me a lot in improving my English and preparing for my education in university. </p>
+            <h2>2/Thuc Hanh Highschool 2015-2017</h2>
+            <p>This is my highschool in Vietnam before i study abroad. This school gives me a lot of opportunities to find out my abilities. I really love this school because there are a lot of student clubs and events during a year.</p>
+            <h2>3/Nguyen Van To Secondary 2011-2015</h2>
+            <p>This is a dream school that I really wanted to get in when I was a child. It is the place that I started my passion in Math and Arts.</p>
+       
+      </div>      
+    		
+
+	</body>
+</html>
 
