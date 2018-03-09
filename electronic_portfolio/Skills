@@ -42,11 +42,11 @@
 	<body>
 
 		<ul class="list">
-  			<li><a href="emtee927.github.io/electronic_portfolio/Home.html" >Home</a></li>
-  			<li><a href="emtee927.github.io/electronic_portfolio/Education.html">Education</a></li>
-  			<li><a href="emtee927.github.io/electronic_portfolio/Volunteer.html">Volunteer</a></li>
-  			<li><a class="active" href="emtee927.github.io/electronic_portfolio/Skills.html">Skills</a></li>
-        		<li><a href="emtee927.github.io/electronic_portfolio/Hobbies.html">Hobbies</a></li>
+  			<li><a href="https://emtee927.github.io/electronic_portfolio/Home.html" >Home</a></li>
+  			<li><a href="https://emtee927.github.io/electronic_portfolio/Education.html">Education</a></li>
+  			<li><a href="https://emtee927.github.io/electronic_portfolio/Volunteer.html">Volunteer</a></li>
+  			<li><a class="active" href="https://emtee927.github.io/electronic_portfolio/Skills.html">Skills</a></li>
+        		<li><a href="https://emtee927.github.io/electronic_portfolio/Hobbies.html">Hobbies</a></li>
 		</ul>
 			<h1 class="intro">Skills</h1>
             <div class="skills">
