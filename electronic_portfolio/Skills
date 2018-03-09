@@ -1,1 +1,63 @@
+<!--Alisa Nguyen-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+    body {
+    	font-family:courier;
+     }
+	ul {
+    	list-style-type: none;
+    	margin: 0;
+    	padding: 0;
+    	overflow: hidden;
+    	background-color: #261a0d;
+	}
+	li {
+    	float: left;
+	}
+	li a {
+    	display: block;
+    	color:white;
+    	text-align: center;
+    	padding: 14px 16px;
+    	text-decoration: none;
+	}
+	li a:hover:not(.active) {
+    	background-color: #5c3e23;
+	}
+	.active {
+    	background-color:#dcbea3 ;
+       ;
+	}
+    .intro{
+    	font-family: impact;
+        text-align:center;
+    }
+    .skills {
+    	font-color: black;
+       }
+		</style>
+	</head>
+	<body>
+
+		<ul class="list">
+  			<li><a href="emtee927.github.io/electronic_portfolio/Home.html" >Home</a></li>
+  			<li><a href="emtee927.github.io/electronic_portfolio/Education.html">Education</a></li>
+  			<li><a href="emtee927.github.io/electronic_portfolio/Volunteer.html">Volunteer</a></li>
+  			<li><a class="active" href="emtee927.github.io/electronic_portfolio/Skills.html">Skills</a></li>
+        		<li><a href="emtee927.github.io/electronic_portfolio/Hobbies.html">Hobbies</a></li>
+		</ul>
+			<h1 class="intro">Skills</h1>
+            <div class="skills">
+			<ol>
+            	<li>FILM TRAILER </li><a href="https://alisanguyen2709.wixsite.com/project/project-1"> More</a>
+                <br/>
+                <li>START-UP BUSINESS </li><a href="https://alisanguyen2709.wixsite.com/project/copy-2-of-project-1"> More</a>
+                <br/>
+                <li>POWERPOINT PRESENTATION </li><a href="https://alisanguyen2709.wixsite.com/project/copy-of-project-1"> More</a>
+           </ol>
+           </div>
+	</body>
+</html>
 
