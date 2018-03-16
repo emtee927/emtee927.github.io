@@ -11,17 +11,26 @@
 		h1,h2{
     text-align:center;
     		}
+       img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    		}
 		</style>
 	</head>
 	<body>
         <h1 style="font-family:impact"> HTML Reference</h1>
+        <img src="https://www.quackit.com/pix/html/tags/html_tags.gif" style="height:150px;width:1000px;">
         <hr>
-		<h2>The &lt!--...--&gt tag</h2>
+		<!--1--><h2>The &lt!--...--&gt tag</h2>
 		<p>The comment tag is used to insert comments in the source code. Comments are not displayed in the browsers.
 <br/><br/>
 You can use comments to explain your code, which can help you when you edit the source code at a later date. This is especially useful if you have a lot of code.</p>
+<p><strong> Example:</strong> &lt !--Your Name-- &gt</p>
+<img src="http://1.bp.blogspot.com/-0Jz5K9r4fwo/VIBZg9eyLrI/AAAAAAAAAF0/4pIsl8N0cC8/s1600/HTML-Comment.png" height="150" width="300";>
 <hr>
-		<h2> The &lt !DOCTYPE html &gt tag</h2>
+		<!--2--><h2> The &lt !DOCTYPE html &gt tag</h2>
         <p>The &lt !DOCTYPE html &gt declaration must be the very first thing in your HTML document, before the &lt html &gt tag.
 <br/><br/>
 The &lt !DOCTYPE html &gt declaration is not an HTML tag; it is an instruction to the web browser about what version of HTML the page is written in.
@@ -30,7 +39,7 @@ In HTML 4.01, the &lt !DOCTYPE html &gt declaration refers to a DTD, because HTM
 <br/><br/>
 HTML5 is not based on SGML, and therefore does not require a reference to a DTD.</p>
 <hr>
-		<h2>The &lt a &gt tag</h2>
+		<!--3--><h2>The &lt a &gt tag</h2>
 		<p>The &lt a &gt tag defines a hyperlink, which is used to link from one page to another.
 <br/><br/>
 The most important attribute of the &lt a &gt element is the href attribute, which indicates the link's destination.
@@ -42,34 +51,40 @@ By default, links will appear as follows in all browsers:
 		<li>An active link is underlined and red</li>
     </ul>
 		</p>
+        <p><strong>Example:</strong> <u>CODE</u> &lt a href="add your link" &gt Click here to go to the Example Page &lt /a &gt . You will get <a href="https://emtee927.github.io/html_reference/Example_<a>.html">Click here to go to the Example Page</a>
 <hr>
-		<h2>The &lt b &gt tag </h2>
+		<!--4--><h2>The &lt b &gt tag </h2>
         <p>The &lt b &gt tag specifies bold text.</p>
+        <p><strong>Example:</strong> <u>CODE</u> &lt b &gt Your Name &lt /b &gt. Then you will get: <b> Your Name </b>. Or you can use &lt strong &gt tag you will get the same result</p>
 <hr>
-		<h2> The &lt body &gt tag </h2>
+		<!--5--><h2> The &lt body &gt tag </h2>
         <p>The &lt body &gt tag defines the document's body.
 <br/><br/>
 The &lt body &gt element contains all the contents of an HTML document, such as text, hyperlinks, images, tables, lists, etc.</p>
+<img src="https://mcqsets.com/wp-content/uploads/2016/01/html-document-structure.png" style="height:100; width:150;">
 <hr>
-		<h2> The &lt br &gt tag </h2>
-        <p> The &lt br &gt tag inserts a single line break.
+		<!--6--><h2> The &lt br/ &gt tag </h2>
+        <p> The &lt br/ &gt tag inserts a single line break.
 <br/><br/>
-The &lt br &gt tag is an empty tag which means that it has no end tag.</p>
+The &lt br/ &gt tag is an empty tag which means that it has no end tag.</p>
+<p><strong>Example:</strong><u>CODE</u> &lt br/ &gt between <b>Line 1</b> and <b>Line 2</b>. Then you will get the result:<br/><b>Line 1 </b><br/><b>Line 2</b>
+
 <hr>
-		<h2> The &lt div &gt tag </h2>
+		<!--7--><h2> The &lt div &gt tag </h2>
         <p>The &lt div &gt tag defines a division or a section in an HTML document.
 <br/><br/>
 The &lt div &gt element is often used as a container for other HTML elements to style them with CSS or to perform certain tasks with JavaScript.</p>
 <hr>
-		<h2> The &lt em &gt tag</h2>
+		<!--8--><h2> The &lt em &gt tag</h2>
         <p>The &lt em &gt tag is a phrase tag. It renders as emphasized text.</p>
+        <p><b>Example:</b> <u>CODE</u> &lt em &gt Your name &lt /em &gt. Then you will get <em> Your name </em></p>
 <hr>
 		<h2> The &lt h1 &gt - &lt h6 &gt tags </h2>
-        <p>The &lt h1 &gt to &lt h6 &gt tags are used to define HTML headings.
+        <!--9--><p>The &lt h1 &gt to &lt h6 &gt tags are used to define HTML headings.
 <br/><br/>
 &lt h1 &gt defines the most important heading. &lt h6 &gt defines the least important heading.</p>
 <hr>
-		<h2>The &lt head &gt tag </h2>
+		<!--10--><h2>The &lt head &gt tag </h2>
         <p>he &lt head &gt element is a container for all the head elements.
 <br/><br/>
 The &lt head &gt element can include a title for the document, scripts, styles, meta information, and more.
@@ -86,37 +101,37 @@ The following elements can go inside the &lt head &gt element:
    </ul>
    		</p>
 <hr>
-		<h2> The &lt hr &gt tag </h2>
+		<!--11--><h2> The &lt hr &gt tag </h2>
         <p> The &lt hr &gt tag defines a thematic break in an HTML page (e.g. a shift of topic).
 <br/><br/>
 The &lt hr &gt element is used to separate content (or define a change) in an HTML page.</p>
 <hr>
-		<h2> the &lt html &gt tag </h2>
+		<!--12--><h2> the &lt html &gt tag </h2>
         <p>The &lt html &gt tag tells the browser that this is an HTML document.
 <br/><br/>
 The &lt html &gt tag represents the root of an HTML document.
 
 The &lt html &gt tag is the container for all other HTML elements (except for the &lt !DOCTYPE &gt tag).<p>
 <hr>	
-		<h2> The &lt img &gt tag </h2>
+		<!--13--><h2> The &lt img &gt tag </h2>
         <p>The &lt img &gt tag defines an image in an HTML page.
 <br/><br/>
 The &lt img &gt tag has two required attributes: src and alt.</p>
 <hr>
-		<h2> The &lt menu &gt tag </h2>
+		<!--14--><h2> The &lt menu &gt tag </h2>
         <p>The &lt menu &gt tag defines a list/menu of commands.
 <br/><br/>
 The &lt menu &gt tag is used for context menus, toolbars and for listing form controls and commands.</p>
 <hr>
-		<h2> The &lt ol &gt tag </h2>
+		<!--15--><h2> The &lt ol &gt tag </h2>
         <p>The &lt ol &gt tag defines an ordered list. An ordered list can be numerical or alphabetical.
 <br/><br/>
 Use the &lt li &gt tag to define list items.</p>
 <hr> 
-		<h2>The &lt strong &gt tag </h2>
+		<!--16--><h2>The &lt strong &gt tag </h2>
         <p>The &lt strong &gt tag is a phrase tag. It defines important text.</p>
 <hr> 
-		<h2> The &lt table &gt tag </h2>
+		<!--17--><h2> The &lt table &gt tag </h2>
         <p>The &lt table &gt tag defines an HTML table.
 <br/><br/>
 An HTML table consists of the &lt table &gt element and one or more &lt tr &gt, &lt th &gt, and &lt td &gt elements.
@@ -125,9 +140,21 @@ The &lt tr &gt element defines a table row, the &lt th &gt element defines a tab
 <br/><br/>
 A more complex HTML table may also include &lt caption &gt, &lt col &gt, &lt colgroup &gt, &lt thead &gt, &lt tfoot &gt, and &lt tbody &gt elements.</p>
 <hr>
-		<h2> The &lt u &gt tag </h2>
+		<!--18--><h2> The &lt u &gt tag </h2>
         <p>The &lt u &gt tag represents some text that should be stylistically different from normal text, such as misspelled words or proper nouns in Chinese.</p>
-
+<hr>
+		<!--19--><h2>The &lt title &gt tag </h2>
+        <p>The &lt title &gt tag is required in all HTML documents and it defines the title of the document.
+<br/><br/>
+The &lt title &gt element:<ul>
+<li>defines a title in the browser toolbar</li>
+<li>provides a title for the page when it is added to favorites</li>
+<li>displays a title for the page in search-engine results</li></ul>
+</p><hr>
+		<!--20--><h2> The &lt ul &gt tag </h2>
+        <p>The &lt ul &gt tag defines an unordered (bulleted) list.
+<br/><br/>
+Use the &lt ul &gt tag together with the &lt li &gt tag to create unordered lists.</p><hr>
 		</hr>
 	</body>
 </html>
