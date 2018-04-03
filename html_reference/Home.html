@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -8,7 +9,7 @@
     background: linear-gradient(to right, #b3ffff , #ffcccc); 
     font-family: Arial;
 			}
-		h1,h2{
+		h1,h2,h3,h4,h5,h6{
     text-align:center;
     		}
        img{
@@ -83,6 +84,13 @@ The &lt div &gt element is often used as a container for other HTML elements to 
         <!--9--><p>The &lt h1 &gt to &lt h6 &gt tags are used to define HTML headings.
 <br/><br/>
 &lt h1 &gt defines the most important heading. &lt h6 &gt defines the least important heading.</p>
+<p><b>Example:</b></p>
+		&lt h1 &gt : <h1>Heading 1</h1>
+        &lt h2 &gt : <h2>Heading 2</h2>
+        &lt h3 &gt : <h3>Heading 3</h3>
+        &lt h4 &gt : <h4>Heading 4</h4>
+        &lt h5 &gt : <h5>Heading 5</h5>
+        &lt h6 &gt : <h6>Heading 6</h6>
 <hr>
 		<!--10--><h2>The &lt head &gt tag </h2>
         <p>he &lt head &gt element is a container for all the head elements.
@@ -105,8 +113,10 @@ The following elements can go inside the &lt head &gt element:
         <p> The &lt hr &gt tag defines a thematic break in an HTML page (e.g. a shift of topic).
 <br/><br/>
 The &lt hr &gt element is used to separate content (or define a change) in an HTML page.</p>
+<p><b>Example:</b>
+<img src="https://image.slidesharecdn.com/webdevelopmentusinghtml5-150118063601-conversion-gate01/95/web-development-using-html-5-21-638.jpg?cb=1421563812" style="height:100; width:150;"></p>
 <hr>
-		<!--12--><h2> the &lt html &gt tag </h2>
+		<!--12--><h2> The &lt html &gt tag </h2>
         <p>The &lt html &gt tag tells the browser that this is an HTML document.
 <br/><br/>
 The &lt html &gt tag represents the root of an HTML document.
@@ -117,6 +127,10 @@ The &lt html &gt tag is the container for all other HTML elements (except for th
         <p>The &lt img &gt tag defines an image in an HTML page.
 <br/><br/>
 The &lt img &gt tag has two required attributes: src and alt.</p>
+<p><b>Example:</b> <u>CODE:</u> &lt img src="smiley.gif" alt="Smiley face" height="42" width="42" &gt . You will get:
+<img src="smiley.gif" alt="Smiley face" height="42" width="42">
+You can also change the size of your image. For example, if you change the height of "Smiley afce" image to 300, you will get:
+<img src="smiley.gif" alt="Smiley face" height="300" width="42">
 <hr>
 		<!--14--><h2> The &lt menu &gt tag </h2>
         <p>The &lt menu &gt tag defines a list/menu of commands.
@@ -127,9 +141,35 @@ The &lt menu &gt tag is used for context menus, toolbars and for listing form co
         <p>The &lt ol &gt tag defines an ordered list. An ordered list can be numerical or alphabetical.
 <br/><br/>
 Use the &lt li &gt tag to define list items.</p>
+<p><b>Example:</b> <u>CODE:</u> </p> 
+&lt ol &gt
+<br/>  &lt li &gt Coffee &lt /li &gt
+<br/>  &lt li &gt Tea &lt /li &gt
+<br/>  &lt li &gt Mil k&lt /li &gt
+<br/>&lt /ol &gt
+<br/>You will get:
+<ol>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+You can also choose the number that you want your list starting with. For example, you want your list starting with number 10 then code: <br/><br/>
+&lt ol start="10" &gt
+<br/>  &lt li &gt Coffee &lt /li &gt
+<br/>  &lt li &gt Tea &lt /li &gt
+<br/>  &lt li &gt Milk &lt /li &gt
+<br/>&lt /ol &gt
+<br/>You will get:
+<ol start="10">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
 <hr> 
 		<!--16--><h2>The &lt strong &gt tag </h2>
         <p>The &lt strong &gt tag is a phrase tag. It defines important text.</p>
+        <p><b> Example:</b> <u>CODE:</u> &lt strong &gt Your Text &lt /strong &gt . Then you will get: <strong>Your Text</strong><br/>
+You can also use &lt b &gt tag instead of &lt strong &gt tag </p>
 <hr> 
 		<!--17--><h2> The &lt table &gt tag </h2>
         <p>The &lt table &gt tag defines an HTML table.
@@ -142,19 +182,29 @@ A more complex HTML table may also include &lt caption &gt, &lt col &gt, &lt col
 <hr>
 		<!--18--><h2> The &lt u &gt tag </h2>
         <p>The &lt u &gt tag represents some text that should be stylistically different from normal text, such as misspelled words or proper nouns in Chinese.</p>
+        <p><b>Example:</b> <u>CODE:</u> &lt u &gt Your Text &lt /u &gt. Then you will get: <u>Your Text</u>
 <hr>
 		<!--19--><h2>The &lt title &gt tag </h2>
         <p>The &lt title &gt tag is required in all HTML documents and it defines the title of the document.
 <br/><br/>
-The &lt title &gt element:<ul>
+The &lt title &gt element:</p><ul>
 <li>defines a title in the browser toolbar</li>
 <li>provides a title for the page when it is added to favorites</li>
 <li>displays a title for the page in search-engine results</li></ul>
-</p><hr>
+<p><b>Example:</b> <u>CODE</u> &lt title &gt Title of your web page &lt /title &gt. You will get:
+<img src="http://cssinhtml.com/wp-content/uploads/2016/06/HTML_title_Tag.jpg" style="height:100; width:150;"></p>
+<hr>
 		<!--20--><h2> The &lt ul &gt tag </h2>
         <p>The &lt ul &gt tag defines an unordered (bulleted) list.
 <br/><br/>
-Use the &lt ul &gt tag together with the &lt li &gt tag to create unordered lists.</p><hr>
+Use the &lt ul &gt tag together with the &lt li &gt tag to create unordered lists.</p>
+<p><b>Example:</b> <u>CODE:</u> <br/>
+<br/> &lt ul &gt
+  <br/> &lt li &gt Coffee &lt /li &gt
+  <br/> &lt li &gtTea</li>
+  <li>Milk</li>
+</ul>
+<hr>
 		</hr>
 	</body>
 </html>
