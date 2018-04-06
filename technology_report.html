@@ -3,7 +3,6 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-body {font-family: impact;}
 /* Style the tab */
 .tab {
     overflow: hidden;
@@ -53,19 +52,16 @@ body {font-family: impact;}
     * {
     box-sizing: border-box;
 }
-
 body {
     background-color: #474e5d;
     font-family: Helvetica, sans-serif;
 }
-
 /* The actual timeline (the vertical ruler) */
 .timeline {
     position: relative;
     max-width: 1200px;
     margin: 0 auto;
 }
-
 /* The actual timeline (the vertical ruler) */
 .timeline::after {
     content: '';
@@ -77,7 +73,6 @@ body {
     left: 50%;
     margin-left: -3px;
 }
-
 /* Container around content */
 .container {
     padding: 10px 40px;
@@ -85,7 +80,6 @@ body {
     background-color: inherit;
     width: 50%;
 }
-
 /* The circles on the timeline */
 .container::after {
     content: '';
@@ -99,17 +93,14 @@ body {
     border-radius: 50%;
     z-index: 1;
 }
-
 /* Place the container to the left */
 .left {
     left: 0;
 }
-
 /* Place the container to the right */
 .right {
     left: 50%;
 }
-
 /* Add arrows to the left container (pointing right) */
 .left::before {
     content: " ";
@@ -123,7 +114,6 @@ body {
     border-width: 10px 0 10px 10px;
     border-color: transparent transparent transparent white;
 }
-
 /* Add arrows to the right container (pointing left) */
 .right::before {
     content: " ";
@@ -137,12 +127,10 @@ body {
     border-width: 10px 10px 10px 0;
     border-color: transparent white transparent transparent;
 }
-
 /* Fix the circle for containers on the right side */
 .right::after {
     left: -16px;
 }
-
 /* The actual content */
 .content {
     padding: 20px 30px;
@@ -150,7 +138,6 @@ body {
     position: relative;
     border-radius: 6px;
 }
-
 /* Media queries - Responsive timeline on screens less than 600px wide */
 @media screen and (max-width: 600px) {
   /* Place the timelime to the left */
@@ -172,7 +159,6 @@ body {
     border-width: 10px 10px 10px 0;
     border-color: transparent white transparent transparent;
   }
-
   /* Make sure all circles are at the same spot */
   .left::after, .right::after {
     left: 15px;
@@ -182,65 +168,137 @@ body {
   .right {
     left: 0%;
   }
-}
 </style>
 </head>
 <body>
 
-<h1 style="text-align:center">FACEBOOK</h1>
+<h1 style="text-align:center; color:white;">FACEBOOK</h1>
 
 <div class="tab">
   <button class="tablinks" onclick="openCity(event, 'History')">History</button>
-  <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+  <button class="tablinks" onclick="openCity(event, 'Benefits')">Benefits</button>
   <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
   
 </div>
 <div id="History" class="tabcontent">
-  <h3>Facebook's History</h3>
+  <h3><font color="white">Facebook's History</font></h3>
   	<img src="https://media.giphy.com/media/tMUP72isYs1BC/giphy.gif" >
 <div class="timeline">
   <div class="container left">
     <div class="content">
-      <h2>2017</h2>
-      <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+      <h2>2004</h2>
+      <p><b>February 2004:</b> Mark Zuckerberg starts Facebook as a sophomore at Harvard University.
+<br/><br/>
+<b>March 2004:</b> Facebook begins allowing people from other colleges and universities to join.
+<br/><br/>
+<b>June 2004:</b> Facebook moves its headquarters to Palo Alto, Calif.
+<br/><br/>
+<b>September 2004:</b> Facebook introduces the Wall, which allows people to write personal musings and other tidbits on profile pages. Facebook becomes the target of a lawsuit claiming that Zuckerberg stole the idea for the social network from a company co-founded by twins Cameron and Tyler Winklevoss and a third person at Harvard.</p>
     </div>
   </div>
   <div class="container right">
     <div class="content">
-      <h2>2016</h2>
-      <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+      <h2>2005</h2>
+      <p><b>September 2005:</b> Facebook expands to include high schools.</p>
     </div>
   </div>
   <div class="container left">
     <div class="content">
-      <h2>2015</h2>
-      <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-    </div>
-  </div>
-  <div class="container right">
-    <div class="content">
-      <h2>2012</h2>
-      <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-    </div>
-  </div>
-  <div class="container left">
-    <div class="content">
-      <h2>2011</h2>
-      <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+      <h2>2006</h2>
+      <p><b>May 2006:</b> Facebook introduces additional networks, allowing people with corporate email addresses to join.
+<br/><br/>
+<b>September 2006:</b> Facebook begins letting anyone over 13 join. It also introduces News Feed, which collects friends’ Wall posts in one place. Although it leads to complaints about privacy, News Feed would become one of Facebook’s most popular features.</p>
     </div>
   </div>
   <div class="container right">
     <div class="content">
       <h2>2007</h2>
-      <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+      <p><b>May 2007:</b> Facebook launches Platform, a system for letting outside programmers develop tools for sharing photos, taking quizzes and playing games. The system gives rise to a Facebook economy and allows companies such as game maker Zynga Inc. to thrive.
+<br/><br/>
+<b>October 2007:</b> Facebook agrees to sell a 1.6 per cent stake to Microsoft for $240 million and forges an advertising partnership.
+<br/><br/>
+<b>November 2007:</b> Facebook unveils its Beacon program, a feature that broadcasts people’s activities on dozens of outside sites. Yet another privacy backlash leads Facebook to give people more control over Beacon, before the company ultimately scraps it as part of a legal settlement.</p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>2008</h2>
+      <p><b>March 2008:</b> Facebook hires Sheryl Sandberg as chief operating officer, snatching the savvy, high-profile executive from Google Inc.
+<br/><br/>
+<b>April 2008:</b> Facebook introduces Chat.</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>2009</h2>
+      <p><b>February 2009:</b> Facebook introduces Like, allowing people to endorse other people’s posts.
+<br/><br/>
+<b>June 2009:</b> Facebook surpasses News Corp.’s Myspace as the leading online social network in the U.S.</p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>2010</h2>
+      <p><b>August 2010:</b> Facebook launches location feature, allowing people to share where they are with their friends.
+<br/><br/>
+<b> October 2010:</b> “The Social Network,” a movie about Zuckerberg and the legal battles over Facebook’s founding, is released. It receives eight Academy Awards nominations and wins three.</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>2011</h2>
+      <p><b>June 2011:</b> Google launches rival social network called Plus. The Winklevoss twins end their legal battle over the idea behind Facebook. They had settled with Facebook for $65 million in 2008, but later sought more money.
+<br/><br/>
+<b>September 2011:</b> Facebook introduces Timeline, a new version of the profile page. It’s meant to show highlights from a person’s entire life rather than recent posts.
+<br/><br/>
+<b>November 2011:</b> Facebook agrees to settle federal charges that it violated users’ privacy by getting people to share more information than they agreed to when they signed up to the site. As part of a settlement, Facebook agrees to allow independent auditors to review its privacy practices for two years. It also agrees to get approval from users before changing how the company handles their data.
+<br/><br/>
+<b>December 2011:</b> Facebook completes a move to Menlo Park, Calif. Its address is 1 Hacker Way.</p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>2012</h2>
+      <p><b>February 2012:</b> Facebook files for an initial public offering of stock. A few weeks later, it unveils new advertising opportunities for brands, allowing ads to mix in with Facebook status updates and photos.
+<br/><br/>
+<b>April 2012:</b> Facebook announces plans to buy Instagram, a photo-sharing social network, for $1 billion in cash and stock. It also discloses it plans to list its stock on the Nasdaq under the ticker symbol “FB.”
+<br/><br/>
+<b>May 2012:</b> Facebook sets a price range of $28 to $35 for its IPO, then increases it to $34 to $38. On May 17, Facebook prices its IPO at $38 per share, and the stock begins trading the next day. The following week, the stock price starts dropping amid concerns about Facebook’s ability to keep growing revenue and sell ads on mobile devices.
+<br/><br/>
+<b>August 2012:</b> Facebook updates its app for iPhones and iPads to make it less clunky. The U.S. government clears Facebook’s Instagram deal.
+<br/><br/>
+<b>September 2012:</b> Facebook closes its purchase of Instagram. With Facebook’s stock price lower, the deal is now valued at about $740 million.
+<br/><br/>
+<b>October 2012:</b> Facebook says it has 1 billion active users.
+<br/><br/>
+<b>December 2012:</b> Facebook rolls out a messaging app called Poke to lukewarm reviews.</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>2013</h2>
+      <p><b>January 2013:</b> Facebook unveils a search feature that lets users quickly sift through their social connections for information about people, interests, photos and places.
+<br/><br/>
+<b>March 2013:</b> Sandberg, the chief operating officer, publishes book urging women to pursue leadership roles.
+<br/><br/>
+<b>April 2013:</b> Facebook unveils a new experience for Android phones. The idea behind the new Home service is to bring Facebook’s content to the phone’s home screen, rather than require users to check apps on the device. It’s a flop.</p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>2014</h2>
+      <p><b>January 2014:</b> Facebook starts to roll out “trending topics,” showing users the most popular topics at any given moment.
+<br/><br/>
+<b>February 2014:</b> Facebook launches a news app called Paper with plans for more applications outside of its own. It celebrates 10-year anniversary with Zuckerberg declaring he is “even more excited about the next ten years than the last. The first ten years were about bootstrapping this network. Now we have the resources to help people across the world solve even bigger and more important problems.”</p>
     </div>
   </div>
 </div>
 </div>
 
-<div id="Paris" class="tabcontent">
-  <h3></h3>
-  <p>Paris is the capital of France.</p> 
+<div id="Benefits" class="tabcontent">
+  <h3><font color="white">Benefits of Facebook</font></h3>
+  <h4><font color="white">hjdsjj</font></h4>
+  <p></p> 
 </div>
 
 <div id="Tokyo" class="tabcontent">
