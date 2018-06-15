@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+let openKey = false;
+let gasPaper = false;
+let pass1=false;
+let pass2=false;
+function start() {
+	let ready= prompt('Are you ready? (Yes or No)').toUpperCase();
+  if (ready === 'YES') {
+  	alert('Warning: There is a lot of text.');
+    newGame();
+  } else {
+  	alert('Restart the game once you are ready to play.');
+  }
+}
+document.write(start());
+function newGame() {
+	alert('You find yourself in a big room. There is a table in the center of the room, a piano , a heat in the corner of the room and a locked door.You have only one way to get out of this room. It is by the door.');
+  let awake = prompt('Which way will you pick? (Your options are TABLE, PIANO, HEAT, and DOOR)').toUpperCase();
+  switch (awake) {
+  	case 'TABLE':
+    	alert('In front of you is a table.');
+      table();
+      break;
+    case 'PIANO':
+    	alert('In front of you is a piano.');
+      piano();
+      break;
+    case 'HEAT':
+    	alert('In front of you is a heat.');
+      heat();
+      break;
+    case 'DOOR':
+    	alert('In front of you is a door.');
+      door();
+      break;
+    default:
+    	alert ('I do not get what you are saying');
+      newGame();
+      break;
+    }
+}
+
+//Table Code
+function table() {
+	alert ('There is a piece of paper on the table.');
+  alert ('Go more closer, you see. Under the table, there is a box which is locked.');
+  let key = prompt('Which one will you pick? (Your options are BOX, PAPER or IGNORE both of them)').toUpperCase();
+  //Choose things on the table
+  switch (key) {
+  	case 'BOX' : //Box
+    	alert('The box is locked.');
+      alert('Shake the box. You heard the sound of metal inside the box.');
+      alert('To open the box, you need to enter the 4-digit code.');
+      if( pass1=== true && pass2=== true){
+      let code = prompt('Enter the code:').toUpperCase();
+      switch (code){
+      	case 'DRMC' :
+        	alert('The box is unlocked. Open the box. You get a key.');
+          openKey = true;
+        	break;
+        default:
+        	alert('Wrong code!!!');
+          table();
+          break;
+     		}
+      } else {
+      alert('Sorry, You do not have the code now. You need to find the code first then turn back');
+      newGame();
+      }
+      break;
+    case 'PAPER' : //Paper
+    	alert('On your hand is a white paper. It seems wet. And it smells like gasoline. You feel like something was written on it by gasoline.');
+      let paper= prompt('Which one will you pick? (Your options are PICK IT UP or IGNORE)').toUpperCase();
+      switch (paper) {
+      	case 'PICK IT UP':
+        	alert ('You have the paper with you now. Type PAPER when you want to take it out.');
+          gasPaper = true;
+        	break;
+        case 'IGNORE':
+       		alert ('You just ignored the paper');
+     			break;
+       	}
+      break;
+    case 'IGNORE':
+    	 let awake = prompt('Which way will you pick? (Your options are TABLE, PIANO, HEAT, and DOOR)').toUpperCase();
+        switch (awake) {
+          case 'TABLE':
+            alert('In front of you is a table.');
+            table();
+            break;
+          case 'PIANO':
+            alert('In front of you is a piano.');
+            piano();
+            break;
+          case 'HEAT':
+            alert('In front of you is a heat.');
+            heat();
+            break;
+          case 'DOOR':
+            alert('In front of you is a door.');
+            door();
+            break;
+          default:
+  					alert ('I do not get what you are saying');
+      			newGame();
+      			break;
+          }
+      break;
+     default:
+    	alert ('I do not get what you are saying');
+      table();
+      break;   
+  }
+  newGame();
+  }
+  
+//Heat code
+function heat() {
+  alert('The heat does not have anything weird. It seems like just be used for burning, warming.');
+  if (gasPaper === true){
+  	alert('REMINDER: You have the gas paper.');
+    let burn=prompt('Which one will you pick? (Your options are PAPER to take it out or LEAVE)').toUpperCase();
+    if(burn==='PAPER'){
+    	alert('You must carefully look at the paper when you burn it because it will be burnt very quickly.');
+    	alert('You burnt the paper.');
+    	let wow= prompt('Did you see anything on the paper?').toUpperCase();
+      if(wow==='YES'){
+				alert('Good job!!! Yes, it is C4.');
+      	alert('Keep in your mind what you have got. It is the part of your passcode.');
+        pass2=true;
+      	newGame();
+      } else if (wow==='NO'){
+      	alert('Too bad you missed you chance.');
+        alert('I will give you one more chance. You can anwser a question or You can restart a the game.')
+        let yo= prompt ('ANSWER or RESTART').toUpperCase();
+        if (yo==='ANSWER'){
+        	let cat=('What is the beginning letter of cat').toUpperCase();
+          if (da==='C'){
+          	alert('Now, you get a part of your passcode. Keep in mind that the passcode is not alphabetical.');
+            pass2=true;
+          } else {
+          	alert ('I do not get what you are saying');
+          	newGame();
+          }
+        } else if ( yo==='RESTART'){
+        	newGame();
+        } else {
+        	alert ('I do not get what you are saying');
+          newGame();
+        }
+     } else {
+     	alert ('I do not get what you are saying');
+      newGame();
+     }
+  } else {
+  	newGame();
+  }
+} else { 
+  let heatP = prompt ('Which one will you pick? (Your options are STAND THERE or LEAVE)').toUpperCase();
+  switch (heatP) {
+    case 'STAND THERE':
+      alert('Do you feel cold?');
+      alert('Do you want to change your choice?');
+      heatP = prompt ('Which one will you pick? (Your options are STAND THERE or LEAVE)');
+      if ( heatP === 'LEAVE'){
+        newGame();
+      } else { 
+        alert('Guess you want to leave');
+        newGame();
+      }
+      break;
+    case 'LEAVE':
+      newGame();
+      break;
+   	default:
+    	alert ('I do not get what you are saying');
+      heat();
+      break;
+  }
+}
+}
+
+//Piano code
+function piano() {
+	alert('There are a paper and a phone on the the piano');
+  let pia= prompt('Which one will you pick? (Your options are PAPER  or PHONE)').toUpperCase();
+  switch (pia){
+  case 'PAPER':
+  	let quiz= prompt ('Do you know how to play an instrument? (Your options are YES or NO)').toUpperCase();
+    	if (quiz==='YES'){ 
+      alert('It is a small musical quiz.');
+      let answer= prompt('What are the first three notes in a major musical scale?').toUpperCase();
+      	if(answer==='DO RE MI'){
+        alert('Wow! You got the answer.');
+        alert('Now you got a part of the code which are the beginning letters of that three notes.');
+        pass1=true;
+        newGame();
+        }else{
+        alert('You answer is wrong. If you need help, you should return and pick the phone');
+        piano();
+        }    
+    } else if (quiz==='NO'){
+    	alert('You should return and pick the phone. ');
+      piano();
+    }	else {
+    	alert('I do not get what you are saying.');
+      alert('Return.');
+      piano();
+    }
+    break;
+  case 'PHONE':
+ 	let screen=prompt('On the screen is the page about a Major Musical Scale. What will you pick? (Your options are LOOK AT IT or LEAVE)').toUpperCase();
+  	if (screen === 'LOOK AT IT'){
+    alert('It is said that the first three notes in a major musical scale are Do Re Mi.');
+    let choice =prompt('Now you got the answer. Where will you go? (Your options are RETURN or go take the PAPER)').toUpperCase();
+    	if(choice==='RETURN'){
+      newGame();
+      } else if(choice === 'PAPER'){
+      piano();
+      } else {
+      alert('I do not get what you are saying.');
+      newGame();
+      }
+    } else {
+    newGame();
+    }
+  	break;
+  default:
+  	alert ('I do not get what you are saying');
+    piano();
+    break;
+  }
+}
+
+//Door code
+function door() {
+	alert ('The door is locked. You need a key to open it.');
+  if (openKey === true){
+  let trick= prompt('Do you have a key?').toUpperCase();
+  switch(trick){
+  	case 'YES':
+    	alert('The door is opened.');
+    	alert('Game over!');
+      break;
+    case 'NO':
+    	alert('Are you sure? You should check your pocket again.');
+      alert('YOu found it and the door is opened.');
+      alert('Game over!');
+      break;
+    default:
+    	alert('I do not get what are you saying');
+      door();
+      break;    
+  }
+  } else {
+  alert('You need to come back to find the key.');
+  newGame();
+  }
+}
+  </script>
+
+</body>
+</html>
